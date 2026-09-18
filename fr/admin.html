@@ -80,7 +80,7 @@ $('connect').onclick=async()=>{
  repoFull=parseRepo($('repo').value.trim());token=$('token').value.trim();
  if(!repoFull||!token)return show('Veuillez remplir les deux champs.');
  try{
-  const r=await fetch('https://api.github.com/repos/'+repoFull+'/contents/../services.json?ref=main',{headers:{Authorization:'Bearer '+token,Accept:'application/vnd.github+json'}});
+  const r=await fetch('https://api.github.com/repos/'+repoFull+'/contents/services-fr.json?ref=main',{headers:{Authorization:'Bearer '+token,Accept:'application/vnd.github+json'}});
   if(!r.ok)throw new Error();
   const j=await r.json();services=JSON.parse(base64ToUtf8(j.content));originalText=JSON.stringify(services,null,2);
   sessionStorage.setItem('repo',repoFull);sessionStorage.setItem('token',token);sessionStorage.setItem('sha',j.sha);
