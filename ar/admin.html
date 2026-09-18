@@ -83,22 +83,22 @@ $('connect').onclick=async()=>{
   const r=await fetch('https://api.github.com/repos/'+repoFull+'/contents/services.json?ref=main',{headers:{Authorization:'Bearer '+token,Accept:'application/vnd.github+json'}});
   if(!r.ok){const e=await r.json().catch(()=>({}));throw new Error((e.message||'HTTP '+r.status)+' ['+r.status+']')}
   const j=await r.json();services=JSON.parse(base64ToUtf8(j.content));originalText=JSON.stringify(services,null,2);
-  sessionStorage.setItem('repo',repoFull);sessionStorage.setItem('token',token);sessionStorage.setItem('sha',j.sha);
+  localStorage.setItem('repo',repoFull);localStorage.setItem('token',token);localStorage.setItem('sha',j.sha);
   render();$('editorBox').classList.remove('hidden');$('loginBox').querySelector('h2').textContent='تم فتح الدليل';$('saveBar').classList.remove('hidden');$('changed').textContent='لا توجد تعديلات';
   show('تم تحميل الدليل. يمكنكم الآن تعديل المعلومات.',true);
- }catch(e){show('تعذّر فتح الدليل. تحققوا من عنوان المستودع ومفتاح الوصول.')}
+ }catch(e){show('خطأ من GitHub: '+(e.message||'تعذّر الاتصال')+' — تحققوا من مفتاح الوصول وصلاحياته.')}
 };
-$('clear').onclick=()=>{sessionStorage.clear();$('token').value='';show('تم مسح المعلومات.',true)};
+$('clear').onclick=()=>{localStorage.removeItem('repo');localStorage.removeItem('token');localStorage.removeItem('sha');$('token').value='';show('تم مسح المعلومات.',true)};
 $('save').onclick=async()=>{
  readDom();const newText=JSON.stringify(services,null,2);
  if(newText===originalText){show('لا توجد تعديلات للحفظ.',true);return}
- const sha=sessionStorage.getItem('sha');
+ const sha=localStorage.getItem('sha');
  try{
   const r=await fetch('https://api.github.com/repos/'+repoFull+'/contents/services.json',{method:'PUT',headers:{Authorization:'Bearer '+token,Accept:'application/vnd.github+json','Content-Type':'application/json'},body:JSON.stringify({message:'تحديث الدليل بواسطة مدير المحتوى',content:utf8ToBase64(newText),sha,branch:'main'})});
   if(!r.ok)throw new Error();
-  const j=await r.json();sessionStorage.setItem('sha',j.content.sha);originalText=newText;$('changed').textContent='تم حفظ التعديلات ✓';show('تم الحفظ. سيُحدَّث الموقع تلقائيًا بعد لحظات.',true);
- }catch(e){show('فشل الحفظ. تحققوا من مفتاح الوصول وحاولوا مرة أخرى.')}
+  const j=await r.json();localStorage.setItem('sha',j.content.sha);originalText=newText;$('changed').textContent='تم حفظ التعديلات ✓';show('تم الحفظ. سيُحدَّث الموقع تلقائيًا بعد لحظات.',true);
+ }catch(e){show('خطأ من GitHub أثناء الحفظ: '+(e.message||'تعذّر الحفظ')+' — تحققوا من صلاحيات مفتاح الوصول.')}
 };
-(function(){const r=sessionStorage.getItem('repo'),t=sessionStorage.getItem('token');if(r)$('repo').value='https://github.com/'+r;if(t)$('token').value=t})();
+(function(){const r=localStorage.getItem('repo'),t=localStorage.getItem('token');if(r)$('repo').value='https://github.com/'+r;if(t)$('token').value=t})();
 </script>
 </body></html>
