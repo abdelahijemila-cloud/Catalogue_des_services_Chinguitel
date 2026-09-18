@@ -10,7 +10,7 @@ header{background:linear-gradient(120deg,#087bdc,#7132c5);color:#fff;padding:28p
 main{padding:24px 16px 60px}.box{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;margin-bottom:18px;box-shadow:0 8px 24px rgba(16,43,85,.06)}
 h2{margin:0 0 14px;font-size:21px}.help{color:var(--muted);font-size:14px}.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{margin-bottom:12px}label{display:block;font-weight:800;font-size:13px;margin-bottom:6px}input,textarea{width:100%;border:1px solid #ccd7e4;border-radius:10px;padding:10px 11px;font:inherit;color:var(--ink);background:#fff}textarea{min-height:75px;resize:vertical}
 button{border:0;border-radius:10px;padding:10px 15px;font:inherit;font-weight:800;cursor:pointer}.primary{background:var(--blue);color:#fff}.secondary{background:#edf3f9;color:var(--ink)}.danger{background:#fff0f0;color:var(--red);border:1px solid #ffd0d0}
-.خدمة{border:1px solid var(--line);border-radius:16px;margin:14px 0;overflow:hidden}.خدمة-head{background:#f6f9fd;padding:15px;display:flex;justify-content:space-between;gap:12px;align-items:center}.خدمة-head strong{font-size:19px}.خدمة-body{padding:16px}.table-card{border:1px solid var(--line);border-radius:13px;padding:13px;margin:13px 0}.table-head{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:10px}.table-head input{max-width:500px;font-weight:800}.grid-table{overflow:auto}.grid-table table{border-collapse:collapse;width:100%;min-width:700px}.grid-table th,.grid-table td{border:1px solid #e2e8f0;padding:7px}.grid-table th{background:#f1f5f9;text-align:left}.grid-table input{border:0;border-radius:6px;padding:7px;background:#fff}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}.status{margin-top:12px;padding:11px 13px;border-radius:10px;display:none}.status.show{display:block}.status.ok{background:#eaf8f1;color:#126b49}.status.err{background:#fff0f0;color:#9f2222}.sticky{position:sticky;bottom:12px;z-index:5;background:#102b55;color:#fff;border-radius:15px;padding:13px;display:flex;justify-content:space-between;align-items:center;gap:15px;box-shadow:0 10px 30px rgba(16,43,85,.25)}.sticky button{background:#fff;color:var(--ink)}.hidden{display:none!important}@media(max-width:700px){.row{grid-template-columns:1fr}.sticky{flex-direction:column;align-items:stretch}}
+.service{border:1px solid var(--line);border-radius:16px;margin:14px 0;overflow:hidden}.service-head{background:#f6f9fd;padding:15px;display:flex;justify-content:space-between;gap:12px;align-items:center}.service-head strong{font-size:19px}.service-body{padding:16px}.table-card{border:1px solid var(--line);border-radius:13px;padding:13px;margin:13px 0}.table-head{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:10px}.table-head input{max-width:500px;font-weight:800}.grid-table{overflow:auto}.grid-table table{border-collapse:collapse;width:100%;min-width:700px}.grid-table th,.grid-table td{border:1px solid #e2e8f0;padding:7px}.grid-table th{background:#f1f5f9;text-align:left}.grid-table input{border:0;border-radius:6px;padding:7px;background:#fff}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}.status{margin-top:12px;padding:11px 13px;border-radius:10px;display:none}.status.show{display:block}.status.ok{background:#eaf8f1;color:#126b49}.status.err{background:#fff0f0;color:#9f2222}.sticky{position:sticky;bottom:12px;z-index:5;background:#102b55;color:#fff;border-radius:15px;padding:13px;display:flex;justify-content:space-between;align-items:center;gap:15px;box-shadow:0 10px 30px rgba(16,43,85,.25)}.sticky button{background:#fff;color:var(--ink)}.hidden{display:none!important}@media(max-width:700px){.row{grid-template-columns:1fr}.sticky{flex-direction:column;align-items:stretch}}
 html,body{direction:rtl}body{font-family:Tahoma,Arial,sans-serif}.grid-table th{text-align:right}.grid-table input{text-align:right}.service-head,.table-head,.sticky{direction:rtl}</style>
 </head>
 <body>
@@ -20,7 +20,7 @@ html,body{direction:rtl}body{font-family:Tahoma,Arial,sans-serif}.grid-table th{
 <h2>1. فتح الدليل</h2>
 <p class="help">استخدموا مفتاح وصول مخصّصًا لهذا الدليل. يتيح لهذه الصفحة قراءة التعديلات وحفظها مباشرةً.</p>
 <div class="row">
-<div class="field"><label>عنوان مستودع GitHub</label><input id="repo" value="https://github.com/abdelahijemila-cloud/Catalogue_des_خدمةs_Chinguitel"></div>
+<div class="field"><label>عنوان مستودع GitHub</label><input id="repo" value="https://github.com/abdelahijemila-cloud/Catalogue_des_services_Chinguitel"></div>
 <div class="field"><label>مفتاح وصول GitHub</label><input id="token" type="password" placeholder="ألصقوا مفتاح الوصول هنا"></div>
 </div>
 <div class="actions"><button class="primary" id="connect">فتح الدليل</button><button class="secondary" id="clear">مسح المعلومات</button></div>
@@ -29,12 +29,12 @@ html,body{direction:rtl}body{font-family:Tahoma,Arial,sans-serif}.grid-table th{
 <section class="box hidden" id="editorBox">
 <h2>2. تعديل المعلومات</h2>
 <p class="help">يمكنكم تعديل الأسعار والأحجام والدقائق والرسائل النصية ومدد الصلاحية والرموز والوصف والجداول.</p>
-<div id="خدمةs"></div>
+<div id="services"></div>
 </section>
 <div class="sticky hidden" id="saveBar"><span id="changed">لا توجد تعديلات</span><button id="save">حفظ التعديلات</button></div>
 </main>
 <script>
-let خدمةs=[],originalText='',repoFull='',token='';
+let services=[],originalText='',repoFull='',token='';
 const $=id=>document.getElementById(id);
 function show(msg,ok=false){const s=$('status');s.textContent=msg;s.className='status show '+(ok?'ok':'err')}
 function parseRepo(v){try{const u=new URL(v);const p=u.pathname.replace(/^\//,'').replace(/\/$/,'').split('/');if(p.length>=2)return p[0]+'/'+p[1]}catch(e){}return v.replace(/^https?:\/\/github\.com\//,'').replace(/\/$/,'')}
@@ -42,12 +42,12 @@ function esc(v){return String(v??'').replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt
 function utf8ToBase64(str){const bytes=new TextEncoder().encode(str);let binary='';const chunk=0x8000;for(let i=0;i<bytes.length;i+=chunk)binary+=String.fromCharCode(...bytes.subarray(i,i+chunk));return btoa(binary)}
 function base64ToUtf8(base64){const binary=atob(base64.replace(/\s/g,''));const bytes=new Uint8Array(binary.length);for(let i=0;i<binary.length;i++)bytes[i]=binary.charCodeAt(i);return new TextDecoder('utf-8').decode(bytes)}
 function render(){
- $('خدمةs').innerHTML=خدمةs.map((s,si)=>`
- <article class="خدمة" data-si="${si}">
-  <div class="خدمة-head"><strong>${esc(s.n)}</strong><button class="danger remove-خدمة">Supprimer ce خدمة</button></div>
-  <div class="خدمة-body">
+ $('services').innerHTML=services.map((s,si)=>`
+ <article class="service" data-si="${si}">
+  <div class="service-head"><strong>${esc(s.n)}</strong><button class="danger remove-service">حذف هذه الخدمة</button></div>
+  <div class="service-body">
    <div class="row">
-    <div class="field"><label>Nom du خدمة</label><input data-path="n" value="${esc(s.n)}"></div>
+    <div class="field"><label>اسم الخدمة</label><input data-path="n" value="${esc(s.n)}"></div>
     <div class="field"><label>الفئة</label><input data-path="c" value="${esc(s.c)}"></div>
    </div>
    <div class="field"><label>كلمات البحث</label><input data-path="aliases" value="${esc(s.aliases||'')}"></div>
@@ -64,25 +64,25 @@ function render(){
  </article>`).join('');
  bindEditor();
 }
-function mark(){$('changed').textContent='Modifications non enregistrées';$('saveBar').classList.remove('hidden')}
+function mark(){$('changed').textContent='تعديلات غير محفوظة';$('saveBar').classList.remove('hidden')}
 function readDom(){
- document.querySelectorAll('.خدمة').forEach(a=>{const si=+a.dataset.si,s=خدمةs[si];a.querySelectorAll('[data-path]').forEach(x=>s[x.dataset.path]=x.value);a.querySelectorAll('.table-card').forEach(tc=>{const ti=+tc.dataset.ti,t=s.tables[ti];t.title=tc.querySelector('.table-title').value;tc.querySelectorAll('.header-input').forEach(x=>t.headers[+x.dataset.hi]=x.value);tc.querySelectorAll('.cell-input').forEach(x=>t.rows[+x.dataset.ri][+x.dataset.ci]=x.value)})});
+ document.querySelectorAll('.service').forEach(a=>{const si=+a.dataset.si,s=services[si];a.querySelectorAll('[data-path]').forEach(x=>s[x.dataset.path]=x.value);a.querySelectorAll('.table-card').forEach(tc=>{const ti=+tc.dataset.ti,t=s.tables[ti];t.title=tc.querySelector('.table-title').value;tc.querySelectorAll('.header-input').forEach(x=>t.headers[+x.dataset.hi]=x.value);tc.querySelectorAll('.cell-input').forEach(x=>t.rows[+x.dataset.ri][+x.dataset.ci]=x.value)})});
 }
 function bindEditor(){
- document.querySelectorAll('#خدمةs input,#خدمةs textarea').forEach(el=>el.addEventListener('input',()=>{readDom();mark()}));
- document.querySelectorAll('.remove-خدمة').forEach(b=>b.onclick=()=>{const a=b.closest('.خدمة');خدمةs.splice(+a.dataset.si,1);render();mark()});
- document.querySelectorAll('.remove-table').forEach(b=>b.onclick=()=>{const a=b.closest('.خدمة'),si=+a.dataset.si,tc=b.closest('.table-card'),ti=+tc.dataset.ti;خدمةs[si].tables.splice(ti,1);render();mark()});
- document.querySelectorAll('.remove-row').forEach(b=>b.onclick=()=>{const a=b.closest('.خدمة'),si=+a.dataset.si,tc=b.closest('.table-card'),ti=+tc.dataset.ti;خدمةs[si].tables[ti].rows.splice(+b.dataset.ri,1);render();mark()});
- document.querySelectorAll('.add-row').forEach(b=>b.onclick=()=>{readDom();const a=b.closest('.خدمة'),si=+a.dataset.si,tc=b.closest('.table-card'),ti=+tc.dataset.ti;خدمةs[si].tables[ti].rows.push(new Array(خدمةs[si].tables[ti].headers.length).fill(''));render();mark()});
- document.querySelectorAll('.add-table').forEach(b=>b.onclick=()=>{readDom();const si=+b.closest('.خدمة').dataset.si;خدمةs[si].tables.push({title:'جدول جديد',headers:['العمود 1','العمود 2'],rows:[['','']]});render();mark()});
+ document.querySelectorAll('#services input,#services textarea').forEach(el=>el.addEventListener('input',()=>{readDom();mark()}));
+ document.querySelectorAll('.remove-service').forEach(b=>b.onclick=()=>{const a=b.closest('.service');services.splice(+a.dataset.si,1);render();mark()});
+ document.querySelectorAll('.remove-table').forEach(b=>b.onclick=()=>{const a=b.closest('.service'),si=+a.dataset.si,tc=b.closest('.table-card'),ti=+tc.dataset.ti;services[si].tables.splice(ti,1);render();mark()});
+ document.querySelectorAll('.remove-row').forEach(b=>b.onclick=()=>{const a=b.closest('.service'),si=+a.dataset.si,tc=b.closest('.table-card'),ti=+tc.dataset.ti;services[si].tables[ti].rows.splice(+b.dataset.ri,1);render();mark()});
+ document.querySelectorAll('.add-row').forEach(b=>b.onclick=()=>{readDom();const a=b.closest('.service'),si=+a.dataset.si,tc=b.closest('.table-card'),ti=+tc.dataset.ti;services[si].tables[ti].rows.push(new Array(services[si].tables[ti].headers.length).fill(''));render();mark()});
+ document.querySelectorAll('.add-table').forEach(b=>b.onclick=()=>{readDom();const si=+b.closest('.service').dataset.si;services[si].tables.push({title:'جدول جديد',headers:['العمود 1','العمود 2'],rows:[['','']]});render();mark()});
 }
 $('connect').onclick=async()=>{
  repoFull=parseRepo($('repo').value.trim());token=$('token').value.trim();
  if(!repoFull||!token)return show('يرجى ملء الحقلين.');
  try{
-  const r=await fetch('https://api.github.com/repos/'+repoFull+'/contents/خدمةs.json?ref=main',{headers:{Authorization:'Bearer '+token,Accept:'application/vnd.github+json'}});
+  const r=await fetch('https://api.github.com/repos/'+repoFull+'/contents/services.json?ref=main',{headers:{Authorization:'Bearer '+token,Accept:'application/vnd.github+json'}});
   if(!r.ok)throw new Error();
-  const j=await r.json();خدمةs=JSON.parse(base64ToUtf8(j.content));originalText=JSON.stringify(خدمةs,null,2);
+  const j=await r.json();services=JSON.parse(base64ToUtf8(j.content));originalText=JSON.stringify(services,null,2);
   sessionStorage.setItem('repo',repoFull);sessionStorage.setItem('token',token);sessionStorage.setItem('sha',j.sha);
   render();$('editorBox').classList.remove('hidden');$('loginBox').querySelector('h2').textContent='تم فتح الدليل';$('saveBar').classList.remove('hidden');$('changed').textContent='لا توجد تعديلات';
   show('تم تحميل الدليل. يمكنكم الآن تعديل المعلومات.',true);
@@ -90,11 +90,11 @@ $('connect').onclick=async()=>{
 };
 $('clear').onclick=()=>{sessionStorage.clear();$('token').value='';show('تم مسح المعلومات.',true)};
 $('save').onclick=async()=>{
- readDom();const newText=JSON.stringify(خدمةs,null,2);
+ readDom();const newText=JSON.stringify(services,null,2);
  if(newText===originalText){show('لا توجد تعديلات à enregistrer.',true);return}
  const sha=sessionStorage.getItem('sha');
  try{
-  const r=await fetch('https://api.github.com/repos/'+repoFull+'/contents/خدمةs.json',{method:'PUT',headers:{Authorization:'Bearer '+token,Accept:'application/vnd.github+json','Content-Type':'application/json'},body:JSON.stringify({message:'تحديث الدليل بواسطة مدير المحتوى',content:utf8ToBase64(newText),sha,branch:'main'})});
+  const r=await fetch('https://api.github.com/repos/'+repoFull+'/contents/services.json',{method:'PUT',headers:{Authorization:'Bearer '+token,Accept:'application/vnd.github+json','Content-Type':'application/json'},body:JSON.stringify({message:'تحديث الدليل بواسطة مدير المحتوى',content:utf8ToBase64(newText),sha,branch:'main'})});
   if(!r.ok)throw new Error();
   const j=await r.json();sessionStorage.setItem('sha',j.content.sha);originalText=newText;$('changed').textContent='تم حفظ التعديلات ✓';show('تم الحفظ. سيُحدَّث الموقع تلقائيًا بعد لحظات.',true);
  }catch(e){show('فشل الحفظ. تحققوا من مفتاح الوصول وحاولوا مرة أخرى.')}
