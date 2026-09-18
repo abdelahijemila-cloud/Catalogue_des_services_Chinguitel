@@ -91,7 +91,7 @@ $('connect').onclick=async()=>{
 $('clear').onclick=()=>{sessionStorage.clear();$('token').value='';show('تم مسح المعلومات.',true)};
 $('save').onclick=async()=>{
  readDom();const newText=JSON.stringify(services,null,2);
- if(newText===originalText){show('لا توجد تعديلات à enregistrer.',true);return}
+ if(newText===originalText){show('لا توجد تعديلات للحفظ.',true);return}
  const sha=sessionStorage.getItem('sha');
  try{
   const r=await fetch('https://api.github.com/repos/'+repoFull+'/contents/services.json',{method:'PUT',headers:{Authorization:'Bearer '+token,Accept:'application/vnd.github+json','Content-Type':'application/json'},body:JSON.stringify({message:'تحديث الدليل بواسطة مدير المحتوى',content:utf8ToBase64(newText),sha,branch:'main'})});
