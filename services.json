@@ -395,7 +395,7 @@
         ]
       }
     ],
-    "activation": "Non précisé dans le document source"
+    "activation": "Non précisé "
   },
   {
     "n": "Internet illimité",
@@ -535,7 +535,7 @@
         ]
       }
     ],
-    "activation": "Non précisé dans le document source"
+    "activation": "Non précisé "
   },
   {
     "n": "Beinatna",
@@ -601,7 +601,7 @@
         ]
       }
     ],
-    "activation": "Non précisé dans le document source"
+    "activation": "Non précisé "
   },
   {
     "n": "Dewli",
@@ -839,6 +839,6 @@
         ]
       }
     ],
-    "activation": "Aucun tableau tarifaire n’était fourni dans la source."
+    "activation": ""
   }
 ]
