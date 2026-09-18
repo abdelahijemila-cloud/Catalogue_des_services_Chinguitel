@@ -1,103 +1,103 @@
 [
   {
     "n": "MauriAllo",
-    "c": "Téléphonie",
+    "c": "الاتصالات الهاتفية",
     "icon": "☎",
     "aliases": "Mauri Allo appels nationaux",
     "tables": [
       {
-        "title": "Tarifs MauriAllo",
+        "title": "أسعار MauriAllo",
         "headers": [
-          "Offre",
-          "Prix",
-          "Durée des appels",
-          "Bonus de crédit",
-          "Validité"
+          "العرض",
+          "السعر",
+          "مدة المكالمات",
+          "رصيد المكافأة",
+          "الصلاحية"
         ],
         "rows": [
           [
             "MauriAllo 5",
             "5 MRU",
-            "5 min",
+            "5 دقائق",
             "—",
-            "Immédiate"
+            "فورية"
           ],
           [
             "MauriAllo 10",
             "10 MRU",
-            "10 min",
+            "10 دقائق",
             "—",
-            "1 jour"
+            "يوم واحد"
           ],
           [
             "MauriAllo 12",
             "12 MRU",
-            "20 min",
+            "20 دقيقة",
             "—",
-            "Immédiate"
+            "فورية"
           ],
           [
             "MauriAllo 20",
             "20 MRU",
-            "24 min",
+            "24 دقيقة",
             "—",
-            "1 jour"
+            "يوم واحد"
           ],
           [
             "MauriAllo 30",
             "30 MRU",
-            "33 min",
+            "33 دقيقة",
             "—",
-            "2 jours"
+            "يومان"
           ],
           [
             "MauriAllo 50",
             "50 MRU",
-            "60 min",
-            "15 min gratuites",
-            "3 jours"
+            "60 دقيقة",
+            "15 دقيقة مجانية",
+            "3 أيام"
           ],
           [
             "MauriAllo 70",
             "70 MRU",
-            "90 min",
+            "90 دقيقة",
             "—",
-            "3 jours"
+            "3 أيام"
           ],
           [
             "MauriAllo 100",
             "100 MRU",
-            "3 h",
-            "100 MRU de crédit bonus",
-            "7 jours"
+            "3 ساعات",
+            "رصيد مكافأة بقيمة 100 MRU",
+            "7 أيام"
           ],
           [
             "MauriAllo 200",
             "200 MRU",
-            "6 h",
-            "200 MRU de crédit bonus",
-            "30 jours"
+            "6 ساعات",
+            "رصيد مكافأة بقيمة 200 MRU",
+            "30 يومًا"
           ],
           [
             "MauriAllo 300",
             "300 MRU",
-            "8 h",
-            "300 MRU de crédit bonus",
-            "30 jours"
+            "8 ساعات",
+            "رصيد مكافأة بقيمة 300 MRU",
+            "30 يومًا"
           ],
           [
             "MauriAllo 500",
             "500 MRU",
-            "15 h",
-            "500 MRU de crédit bonus",
-            "30 jours"
+            "15 ساعة",
+            "رصيد مكافأة بقيمة 500 MRU",
+            "30 يومًا"
           ],
           [
             "MauriAllo 1000",
             "1 000 MRU",
-            "30 h",
-            "2 000 MRU de crédit bonus",
-            "30 jours"
+            "30 ساعة",
+            "رصيد مكافأة بقيمة 2,000 MRU",
+            "30 يومًا"
           ]
         ]
       }
@@ -106,110 +106,110 @@
   },
   {
     "n": "MauriNet",
-    "c": "Internet mobile",
+    "c": "الإنترنت عبر الهاتف المحمول",
     "icon": "◉",
-    "aliases": "Mauri Net Internet data 3G 4G 5G",
+    "aliases": "MauriNet للإنترنت والبيانات 3G و4G و5G",
     "tables": [
       {
-        "title": "Tarifs MauriNet",
+        "title": "أسعار MauriNet",
         "headers": [
-          "Offre",
-          "Prix",
-          "Volume Internet",
-          "Bonus vendredi–dimanche",
-          "Validité"
+          "العرض",
+          "السعر",
+          "حجم الإنترنت",
+          "مكافأة الجمعة–الأحد",
+          "الصلاحية"
         ],
         "rows": [
           [
             "MauriNet 10",
             "10 MRU",
-            "100 Mo",
+            "100 ميجابايت",
             "—",
-            "1 jour"
+            "يوم واحد"
           ],
           [
             "MauriNet 20",
             "20 MRU",
             "512 Mo",
             "—",
-            "1 jour"
+            "يوم واحد"
           ],
           [
             "MauriNet 30",
             "30 MRU",
-            "1 Go",
+            "1 جيجابايت",
             "—",
-            "1 jour"
+            "يوم واحد"
           ],
           [
             "MauriNet 50",
             "50 MRU",
-            "1,5 Go",
+            "1.5 جيجابايت",
             "—",
-            "3 jours"
+            "3 أيام"
           ],
           [
             "MauriNet 70",
             "70 MRU",
-            "2 Go",
-            "4 Go",
-            "3 jours"
+            "2 جيجابايت",
+            "4 جيجابايت",
+            "3 أيام"
           ],
           [
             "MauriNet 100",
             "100 MRU",
-            "3 Go",
-            "6 Go",
-            "7 jours"
+            "3 جيجابايت",
+            "6 جيجابايت",
+            "7 أيام"
           ],
           [
             "MauriNet 150",
             "150 MRU",
-            "4 Go",
-            "8 Go",
-            "10 jours"
+            "4 جيجابايت",
+            "8 جيجابايت",
+            "10 أيام"
           ],
           [
             "MauriNet 200",
             "200 MRU",
-            "6 Go",
-            "12 Go",
-            "30 jours"
+            "6 جيجابايت",
+            "12 جيجابايت",
+            "30 يومًا"
           ],
           [
             "MauriNet 300",
             "300 MRU",
-            "12 Go",
+            "12 جيجابايت",
             "24 Go",
-            "30 jours"
+            "30 يومًا"
           ],
           [
             "MauriNet 500",
             "500 MRU",
-            "25 Go",
-            "50 Go",
-            "30 jours"
+            "25 جيجابايت",
+            "50 جيجابايت",
+            "30 يومًا"
           ],
           [
             "MauriNet 1000",
             "1 000 MRU",
-            "50 Go",
-            "100 Go",
-            "30 jours"
+            "50 جيجابايت",
+            "100 جيجابايت",
+            "30 يومًا"
           ],
           [
             "MauriNet 2000",
             "2 000 MRU",
-            "500 Go",
-            "1 To",
-            "30 jours"
+            "500 جيجابايت",
+            "1 تيرابايت",
+            "30 يومًا"
           ],
           [
             "MauriNet 3000",
             "3 000 MRU",
-            "1 To",
-            "2 To",
-            "30 jours"
+            "1 تيرابايت",
+            "2 تيرابايت",
+            "30 يومًا"
           ]
         ]
       }
@@ -218,111 +218,111 @@
   },
   {
     "n": "MauriMix",
-    "c": "Appels + Internet + SMS",
+    "c": "المكالمات + الإنترنت + الرسائل النصية",
     "icon": "◈",
-    "aliases": "Mauri Mix appels internet SMS",
+    "aliases": "MauriMix للمكالمات والإنترنت والرسائل النصية",
     "tables": [
       {
-        "title": "Tarifs MauriMix",
+        "title": "أسعار MauriMix",
         "headers": [
-          "Offre",
-          "Prix",
-          "Internet",
-          "Appels",
-          "SMS",
-          "Bonus week-end",
-          "Validité"
+          "العرض",
+          "السعر",
+          "الإنترنت",
+          "المكالمات",
+          "الرسائل النصية",
+          "مكافأة نهاية الأسبوع",
+          "الصلاحية"
         ],
         "rows": [
           [
             "10",
             "10 MRU",
-            "100 Mo",
-            "7,5 min",
+            "100 ميجابايت",
+            "7.5 دقيقة",
             "5",
             "—",
-            "1 jour"
+            "يوم واحد"
           ],
           [
             "20",
             "20 MRU",
-            "200 Mo",
-            "15 min",
+            "200 ميجابايت",
+            "15 دقيقة",
             "15",
             "—",
-            "1 jour"
+            "يوم واحد"
           ],
           [
             "30",
             "30 MRU",
-            "1 Go",
-            "30 min",
+            "1 جيجابايت",
+            "30 دقيقة",
             "30",
             "—",
-            "Immédiate"
+            "فورية"
           ],
           [
             "50",
             "50 MRU",
-            "700 Mo",
-            "40 min",
+            "700 ميجابايت",
+            "40 دقيقة",
             "40",
             "—",
-            "3 jours"
+            "3 أيام"
           ],
           [
             "70",
             "70 MRU",
-            "1,5 Go",
-            "1 h",
+            "1.5 جيجابايت",
+            "ساعة واحدة",
             "70",
             "3 Go + 1 h",
-            "3 jours"
+            "3 أيام"
           ],
           [
             "100",
             "100 MRU",
-            "2 Go",
-            "1 h 30",
+            "2 جيجابايت",
+            "ساعة و30 دقيقة",
             "100",
             "4 Go + 1 h 30",
-            "7 jours"
+            "7 أيام"
           ],
           [
             "200",
             "200 MRU",
-            "5 Go",
-            "3 h",
+            "5 جيجابايت",
+            "3 ساعات",
             "200",
             "10 Go + 3 h",
-            "30 jours"
+            "30 يومًا"
           ],
           [
             "300",
             "300 MRU",
-            "8 Go",
-            "5 h",
+            "8 جيجابايت",
+            "5 ساعات",
             "300",
             "16 Go + 5 h",
-            "30 jours"
+            "30 يومًا"
           ],
           [
             "500",
             "500 MRU",
-            "15 Go",
-            "10 h",
+            "15 جيجابايت",
+            "10 ساعات",
             "500",
             "30 Go + 10 h",
-            "30 jours"
+            "30 يومًا"
           ],
           [
             "1000",
             "1 000 MRU",
-            "30 Go",
-            "20 h",
+            "30 جيجابايت",
+            "20 ساعة",
             "500",
             "60 Go + 20 h",
-            "30 jours"
+            "30 يومًا"
           ]
         ]
       }
@@ -331,40 +331,40 @@
   },
   {
     "n": "MauriChat",
-    "c": "Internet + SMS",
+    "c": "الإنترنت + الرسائل النصية",
     "icon": "✉",
-    "aliases": "Mauri Chat SMS",
+    "aliases": "MauriChat للرسائل النصية",
     "tables": [
       {
-        "title": "Tarifs MauriChat",
+        "title": "أسعار MauriChat",
         "headers": [
-          "Offre",
-          "Prix",
-          "SMS",
-          "Internet",
-          "Validité"
+          "العرض",
+          "السعر",
+          "الرسائل النصية",
+          "الإنترنت",
+          "الصلاحية"
         ],
         "rows": [
           [
             "10",
             "10 MRU",
             "80 SMS",
-            "20 Mo",
-            "1 jour"
+            "20 ميجابايت",
+            "يوم واحد"
           ],
           [
             "20",
             "20 MRU",
             "150 SMS",
-            "50 Mo",
-            "7 jours"
+            "50 ميجابايت",
+            "7 أيام"
           ],
           [
             "50",
             "50 MRU",
             "400 SMS",
-            "100 Mo",
-            "30 jours"
+            "100 ميجابايت",
+            "30 يومًا"
           ]
         ]
       }
@@ -373,126 +373,126 @@
   },
   {
     "n": "MauriNuit",
-    "c": "Internet de nuit",
+    "c": "الإنترنت الليلي",
     "icon": "☾",
-    "aliases": "Mauri Nuit nuit internet appels",
+    "aliases": "MauriNuit للإنترنت الليلي والمكالمات",
     "tables": [
       {
-        "title": "Tarif MauriNuit",
+        "title": "سعر MauriNuit",
         "headers": [
-          "Offre",
-          "Prix",
-          "Contenu",
-          "Période d’utilisation"
+          "العرض",
+          "السعر",
+          "المحتوى",
+          "فترة الاستخدام"
         ],
         "rows": [
           [
             "MauriNuit",
             "60 MRU",
-            "Internet illimité + 60 min d’appels locaux",
+            "إنترنت غير محدود + 60 دقيقة من المكالمات المحلية",
             "01:00–08:00"
           ]
         ]
       }
     ],
-    "activation": "Non précisé dans le document source"
+    "activation": "غير محدد في المصدر"
   },
   {
-    "n": "Internet illimité",
-    "c": "Internet",
+    "n": "إنترنت غير محدود",
+    "c": "الإنترنت",
     "icon": "∞",
-    "aliases": "illimité data internet unlimited",
+    "aliases": "إنترنت غير محدود وبيانات غير محدودة",
     "tables": [
       {
         "title": "Tarifs Internet illimité",
         "headers": [
-          "Offre",
-          "Prix",
-          "Contenu",
-          "Validité"
+          "العرض",
+          "السعر",
+          "المحتوى",
+          "الصلاحية"
         ],
         "rows": [
           [
-            "Illimité — quotidien",
+            "غير محدود — يومي",
             "70 MRU",
-            "Internet illimité",
-            "24 h"
+            "إنترنت غير محدود",
+            "24 ساعة"
           ],
           [
-            "Illimité — mensuel",
+            "غير محدود — شهري",
             "1 400 MRU",
-            "Internet illimité",
-            "30 jours"
+            "إنترنت غير محدود",
+            "30 يومًا"
           ]
         ]
       }
     ],
-    "activation": "Non précisé dans le document source"
+    "activation": "غير محدد في المصدر"
   },
   {
     "n": "Raha / Raha+",
-    "c": "Internet + réseaux sociaux + médias",
+    "c": "الإنترنت + شبكات التواصل الاجتماعي + الوسائط",
     "icon": "♡",
-    "aliases": "Raha Raha Plus Mauri Relax réseaux sociaux médias",
+    "aliases": "Raha وRaha Plus وMauri Relax وشبكات التواصل الاجتماعي والوسائط",
     "tables": [
       {
-        "title": "Tarifs Raha",
+        "title": "أسعار Raha",
         "headers": [
-          "Offre",
-          "Prix",
-          "Internet classique",
-          "Réseaux sociaux",
-          "Médias",
-          "Validité"
+          "العرض",
+          "السعر",
+          "الإنترنت العادي",
+          "شبكات التواصل الاجتماعي",
+          "الوسائط",
+          "الصلاحية"
         ],
         "rows": [
           [
             "20",
             "20 MRU",
-            "200 Mo",
-            "800 Mo",
+            "200 ميجابايت",
+            "800 ميجابايت",
             "—",
-            "1 jour"
+            "يوم واحد"
           ],
           [
             "30",
             "30 MRU",
             "500 Mo",
-            "1 Go",
+            "1 جيجابايت",
             "—",
-            "2 jours"
+            "يومان"
           ],
           [
             "50",
             "50 MRU",
-            "1 Go",
-            "1 Go",
-            "1 Go",
-            "3 jours"
+            "1 جيجابايت",
+            "1 جيجابايت",
+            "1 جيجابايت",
+            "3 أيام"
           ],
           [
             "70",
             "70 MRU",
-            "1 Go",
-            "2 Go",
-            "1 Go",
-            "7 jours"
+            "1 جيجابايت",
+            "2 جيجابايت",
+            "1 جيجابايت",
+            "7 أيام"
           ],
           [
             "100",
             "100 MRU",
-            "2 Go",
+            "2 جيجابايت",
             "Illimité",
-            "2 Go",
-            "7 jours"
+            "2 جيجابايت",
+            "7 أيام"
           ],
           [
             "300",
             "300 MRU",
-            "10 Go",
+            "10 جيجابايت",
             "Illimité",
-            "10 Go",
-            "30 jours"
+            "10 جيجابايت",
+            "30 يومًا"
           ]
         ]
       }
@@ -501,78 +501,78 @@
   },
   {
     "n": "Raha Night",
-    "c": "Réseaux sociaux de nuit",
+    "c": "شبكات التواصل الاجتماعي ليلًا",
     "icon": "☽",
-    "aliases": "Raha Night nuit réseaux sociaux",
+    "aliases": "Raha Night لشبكات التواصل الاجتماعي ليلًا",
     "tables": [
       {
-        "title": "Tarifs Raha Night",
+        "title": "أسعار Raha Night",
         "headers": [
-          "Offre",
-          "Prix",
-          "Contenu",
-          "Période / validité"
+          "العرض",
+          "السعر",
+          "المحتوى",
+          "الفترة / الصلاحية"
         ],
         "rows": [
           [
             "20",
             "20 MRU",
-            "1 Go + réseaux sociaux illimités",
+            "1 جيجابايت + شبكات تواصل اجتماعي غير محدودة",
             "00:00–07:00"
           ],
           [
             "50",
             "50 MRU",
-            "5 Go + réseaux sociaux illimités",
-            "3 nuits"
+            "5 جيجابايت + شبكات تواصل اجتماعي غير محدودة",
+            "3 ليالٍ"
           ],
           [
             "70",
             "70 MRU",
-            "6 Go + réseaux sociaux illimités",
-            "3 nuits"
+            "6 جيجابايت + شبكات تواصل اجتماعي غير محدودة",
+            "3 ليالٍ"
           ]
         ]
       }
     ],
-    "activation": "Non précisé dans le document source"
+    "activation": "غير محدد في المصدر"
   },
   {
     "n": "Beinatna",
-    "c": "Groupe fermé",
+    "c": "مجموعة مغلقة",
     "icon": "♧",
-    "aliases": "Beinatna groupe fermé partage crédit données",
+    "aliases": "Beinatna لمجموعة مغلقة ومشاركة الرصيد والبيانات",
     "tables": [
       {
-        "title": "Tarifs Beinatna",
+        "title": "أسعار Beinatna",
         "headers": [
-          "Offre",
-          "Prix",
-          "Internet",
-          "Appels",
-          "Validité"
+          "العرض",
+          "السعر",
+          "الإنترنت",
+          "المكالمات",
+          "الصلاحية"
         ],
         "rows": [
           [
             "Beinatna 500",
             "500 MRU",
-            "50 Go",
+            "50 جيجابايت",
             "2 h",
-            "30 jours"
+            "30 يومًا"
           ],
           [
             "Beinatna 700",
             "700 MRU",
-            "100 Go",
-            "3 h",
-            "30 jours"
+            "100 جيجابايت",
+            "3 ساعات",
+            "30 يومًا"
           ],
           [
             "Beinatna 1000",
             "1 000 MRU",
-            "250 Go",
-            "5 h",
-            "30 jours"
+            "250 جيجابايت",
+            "5 ساعات",
+            "30 يومًا"
           ]
         ]
       }
@@ -580,64 +580,64 @@
     "activation": "*5# / 111# puis *5#"
   },
   {
-    "n": "Offre du dimanche",
-    "c": "Offre spéciale",
+    "n": "عرض الأحد",
+    "c": "عرض خاص",
     "icon": "☀",
-    "aliases": "dimanche Sunday offre",
+    "aliases": "عرض الأحد",
     "tables": [
       {
-        "title": "Offre du dimanche",
+        "title": "عرض الأحد",
         "headers": [
-          "Prix",
-          "Contenu",
-          "Validité"
+          "السعر",
+          "المحتوى",
+          "الصلاحية"
         ],
         "rows": [
           [
             "30 MRU",
-            "1 Go + 60 min d’appels locaux + 100 SMS",
-            "Dimanche uniquement"
+            "1 جيجابايت + 60 دقيقة من المكالمات المحلية + 100 رسالة نصية",
+            "يوم الأحد فقط"
           ]
         ]
       }
     ],
-    "activation": "Non précisé dans le document source"
+    "activation": "غير محدد في المصدر"
   },
   {
     "n": "Dewli",
-    "c": "Appels internationaux",
+    "c": "المكالمات الدولية",
     "icon": "◎",
-    "aliases": "Dewli international appels internationaux",
+    "aliases": "Dewli للمكالمات الدولية",
     "tables": [
       {
-        "title": "Tarifs Dewli — appels internationaux",
+        "title": "أسعار Dewli — المكالمات الدولية",
         "headers": [
-          "Offre",
-          "Prix",
-          "Minutes internationales",
-          "Validité",
-          "Code d’activation"
+          "العرض",
+          "السعر",
+          "الدقائق الدولية",
+          "الصلاحية",
+          "رمز التفعيل"
         ],
         "rows": [
           [
             "Dewli 5",
             "60 MRU",
-            "5 min",
-            "5 jours",
+            "5 دقائق",
+            "5 أيام",
             "5905#"
           ],
           [
             "Dewli 15",
             "170 MRU",
-            "15 min",
-            "15 jours",
+            "15 دقيقة",
+            "15 يومًا",
             "59015#"
           ],
           [
             "Dewli 35",
             "390 MRU",
-            "35 min",
-            "30 jours",
+            "35 دقيقة",
+            "30 يومًا",
             "59035#"
           ]
         ]
@@ -646,44 +646,44 @@
     "activation": "5905# / 59015# / 59035#"
   },
   {
-    "n": "Offres Sénégal",
-    "c": "International",
+    "n": "عروض السنغال",
+    "c": "دولي",
     "icon": "◇",
-    "aliases": "Sénégal Senegal minutes appels",
+    "aliases": "السنغال والدقائق والمكالمات",
     "tables": [
       {
-        "title": "Offres vers le Sénégal",
+        "title": "عروض إلى السنغال",
         "headers": [
-          "Offre",
-          "Prix",
-          "Minutes vers le Sénégal",
-          "Minutes locales",
-          "Validité",
-          "Code d’activation"
+          "العرض",
+          "السعر",
+          "الدقائق إلى السنغال",
+          "الدقائق المحلية",
+          "الصلاحية",
+          "رمز التفعيل"
         ],
         "rows": [
           [
             "50",
             "50 MRU",
-            "5 min",
-            "5 min",
-            "7 jours",
+            "5 دقائق",
+            "5 دقائق",
+            "7 أيام",
             "*221*1#"
           ],
           [
             "100",
             "100 MRU",
-            "10 min",
-            "10 min",
-            "15 jours",
+            "10 دقائق",
+            "10 دقائق",
+            "15 يومًا",
             "*221*2#"
           ],
           [
             "200",
             "200 MRU",
-            "20 min",
-            "20 min",
-            "30 jours",
+            "20 دقيقة",
+            "20 دقيقة",
+            "30 يومًا",
             "*221*3#"
           ]
         ]
@@ -693,152 +693,152 @@
   },
   {
     "n": "eSIM",
-    "c": "Solution digitale",
+    "c": "حل رقمي",
     "icon": "▧",
-    "aliases": "eSIM Travel eSIM internet international",
+    "aliases": "eSIM والسفر والإنترنت الدولي",
     "tables": [
       {
-        "title": "Processus eSIM",
+        "title": "خطوات eSIM",
         "headers": [
-          "Étape",
-          "Détail"
+          "الخطوة",
+          "التفاصيل"
         ],
         "rows": [
           [
             "1",
-            "Ouvrir le lien d’abonnement."
+            "افتح رابط الاشتراك."
           ],
           [
             "2",
-            "Vérifier que le téléphone prend en charge l’eSIM avec *#06#."
+            "تحقق من دعم الهاتف لتقنية eSIM باستخدام *#06#."
           ],
           [
             "3",
-            "Choisir le pays souhaité."
+            "اختر الدولة المطلوبة."
           ],
           [
             "4",
-            "Choisir le forfait Internet souhaité."
+            "اختر باقة الإنترنت المطلوبة."
           ],
           [
             "5",
-            "Saisir votre numéro Chinguitel."
+            "أدخل رقم شينقيتل الخاص بك."
           ],
           [
             "6",
-            "Recevoir un premier SMS contenant le code personnel."
+            "استلم رسالة نصية أولى تحتوي على الرمز الشخصي."
           ],
           [
             "7",
-            "Recevoir un second SMS contenant le code de vérification. Après confirmation, le montant du forfait est débité du solde."
+            "استلم رسالة نصية ثانية تحتوي على رمز التحقق. بعد التأكيد، تُخصم قيمة الباقة من الرصيد."
           ],
           [
             "8",
-            "Recevoir le QR code et l’installer en suivant les instructions."
+            "استلم رمز QR وثبّته باتباع التعليمات."
           ]
         ]
       }
     ],
-    "activation": "Le lien d’abonnement est envoyé sur la ligne Chinguitel et disponible dans l’application Chinguitel."
+    "activation": "يُرسل رابط الاشتراك إلى خط شينقيتل، وهو متاح أيضًا في تطبيق شينقيتل."
   },
   {
-    "n": "Services de base",
-    "c": "Services",
+    "n": "الخدمات الأساسية",
+    "c": "الخدمات",
     "icon": "⚙",
-    "aliases": "Recharge transfert de crédit consultation solde renvoi double appel conférence messagerie vocale Kelemni Khaberni",
+    "aliases": "إعادة التعبئة وتحويل الرصيد والاستعلام عن الرصيد وتحويل المكالمات والمكالمة الثانية والمؤتمرات والبريد الصوتي وكلمّني وخبّرني",
     "tables": [
       {
-        "title": "Services disponibles",
+        "title": "الخدمات المتاحة",
         "headers": [
-          "Service",
-          "Informations détaillées"
+          "الخدمة",
+          "معلومات تفصيلية"
         ],
         "rows": [
           [
             "Recharge",
-            "Service de recharge."
+            "خدمة إعادة التعبئة."
           ],
           [
             "Transfert de crédit",
-            "Service de transfert de crédit."
+            "خدمة تحويل الرصيد."
           ],
           [
-            "Consultation du solde",
-            "Service de consultation du solde."
+            "الاستعلام عن الرصيد",
+            "خدمة الاستعلام عن الرصيد."
           ],
           [
-            "Renvoi et double appel",
-            "Service de gestion des appels."
+            "تحويل المكالمات والمكالمة الثانية",
+            "خدمة إدارة المكالمات."
           ],
           [
-            "Conférence",
-            "Service de conférence téléphonique."
+            "المؤتمر الهاتفي",
+            "خدمة المؤتمرات الهاتفية."
           ],
           [
-            "Messagerie vocale",
-            "Service de messagerie vocale."
+            "البريد الصوتي",
+            "خدمة البريد الصوتي."
           ],
           [
             "Kelemni",
-            "Demander à quelqu’un de vous rappeler."
+            "اطلب من شخص ما الاتصال بك مجددًا."
           ],
           [
             "Khaberni",
-            "Être informé des appels reçus."
+            "الحصول على إشعار بالمكالمات الواردة."
           ]
         ]
       }
     ],
-    "activation": "Les tableaux tarifaires détaillés n’étaient pas fournis dans la source pour ces services."
+    "activation": "لم تُقدَّم جداول أسعار تفصيلية لهذه الخدمات في المصدر."
   },
   {
-    "n": "Solutions data & entreprises",
-    "c": "Entreprises",
+    "n": "حلول البيانات والشركات",
+    "c": "الشركات",
     "icon": "▤",
-    "aliases": "Wi-Fi solutions data professionnel entreprise SMPP Bulk SMS Toll-Free suivi reporting",
+    "aliases": "Wi-Fi وحلول البيانات والمهنيين والشركات وSMPP والرسائل الجماعية وToll-Free والمتابعة والتقارير",
     "tables": [
       {
-        "title": "Solutions mentionnées dans le document source",
+        "title": "الحلول المذكورة في المصدر",
         "headers": [
-          "Solution",
-          "Description"
+          "الحل",
+          "الوصف"
         ],
         "rows": [
           [
             "Wi-Fi",
-            "Partout, plus facilement."
+            "في كل مكان بسهولة أكبر."
           ],
           [
             "Solutions data",
-            "Pour particuliers et entreprises."
+            "للأفراد والشركات."
           ],
           [
             "Bulk SMS",
-            "Envoi de masse."
+            "إرسال جماعي."
           ],
           [
             "SMPP",
-            "Messagerie professionnelle."
+            "مراسلة مهنية."
           ],
           [
-            "Suivi et reporting",
-            "Suivi des données et des SMS."
+            "المتابعة والتقارير",
+            "متابعة البيانات والرسائل النصية."
           ],
           [
-            "Numéros gratuits (Toll-Free)",
-            "Une image professionnelle."
+            "أرقام مجانية (Toll-Free)",
+            "صورة احترافية."
           ],
           [
-            "Internet professionnel",
-            "Connectivité sur mesure."
+            "الإنترنت المهني",
+            "اتصال مصمم حسب الحاجة."
           ],
           [
-            "Solutions Wi-Fi et data",
-            "Pour tous vos sites."
+            "حلول Wi-Fi والبيانات",
+            "لجميع مواقعكم."
           ]
         ]
       }
     ],
-    "activation": "Aucun tableau tarifaire n’était fourni dans la source."
+    "activation": "لم يُقدَّم أي جدول أسعار في المصدر."
   }
 ]
