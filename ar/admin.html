@@ -80,8 +80,8 @@ $('connect').onclick=async()=>{
  repoFull=parseRepo($('repo').value.trim());token=$('token').value.trim();
  if(!repoFull||!token)return show('يرجى ملء الحقلين.');
  try{
-  const r=await fetch('https://api.github.com/repos/'+repoFull+'/contents/../services.json?ref=main',{headers:{Authorization:'Bearer '+token,Accept:'application/vnd.github+json'}});
-  if(!r.ok)throw new Error();
+  const r=await fetch('https://api.github.com/repos/'+repoFull+'/contents/services.json?ref=main',{headers:{Authorization:'Bearer '+token,Accept:'application/vnd.github+json'}});
+  if(!r.ok){const e=await r.json().catch(()=>({}));throw new Error((e.message||'HTTP '+r.status)+' ['+r.status+']')}
   const j=await r.json();services=JSON.parse(base64ToUtf8(j.content));originalText=JSON.stringify(services,null,2);
   sessionStorage.setItem('repo',repoFull);sessionStorage.setItem('token',token);sessionStorage.setItem('sha',j.sha);
   render();$('editorBox').classList.remove('hidden');$('loginBox').querySelector('h2').textContent='تم فتح الدليل';$('saveBar').classList.remove('hidden');$('changed').textContent='لا توجد تعديلات';
