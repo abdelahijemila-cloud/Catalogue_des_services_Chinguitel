@@ -102,7 +102,7 @@
         ]
       }
     ],
-    "activation": "*1# / *1*prix# / application Chinguitel / transfert de crédit / applications bancaires"
+    "activation": "*1# / *1*السعر# / تطبيق شينقيتل / تحويل الرصيد / التطبيقات البنكية\n"
   },
   {
     "n": "MauriNet",
@@ -214,7 +214,7 @@
         ]
       }
     ],
-    "activation": "*2# / 111# puis *2# / application Chinguitel / transfert de crédit / applications bancaires"
+    "activation": "*2# / 111# ثم *2# / تطبيق شينقيتل / تحويل الرصيد / التطبيقات البنكية"
   },
   {
     "n": "MauriMix",
@@ -327,7 +327,7 @@
         ]
       }
     ],
-    "activation": "*3# / 111# puis *3#"
+    "activation": "*3# / 111# ثم *3# / تطبيق شينقيتل / تحويل الرصيد / التطبيقات البنكية"
   },
   {
     "n": "MauriChat",
@@ -369,7 +369,7 @@
         ]
       }
     ],
-    "activation": "*4# / 111# puis *4#"
+    "activation": "*4# / 111# ثم *4# / تطبيق شينقيتل / تحويل الرصيد / التطبيقات البنكية"
   },
   {
     "n": "MauriNuit",
@@ -427,7 +427,7 @@
         ]
       }
     ],
-    "activation": "غير محدد في المصدر"
+    "activation": "التطبيقات البنكية"
   },
   {
     "n": "Raha / Raha+",
@@ -497,7 +497,7 @@
         ]
       }
     ],
-    "activation": "*6# / 111# puis *6#"
+    "activation": "*6# / 111# ثم *6# / تطبيق شينقيتل / تحويل الرصيد / التطبيقات البنكية"
   },
   {
     "n": "Raha Night",
@@ -538,10 +538,10 @@
     "activation": "غير محدد في المصدر"
   },
   {
-    "n": "Beinatna",
+    "n": "بيناتنا",
     "c": "مجموعة مغلقة",
     "icon": "♧",
-    "aliases": "Beinatna لمجموعة مغلقة ومشاركة الرصيد والبيانات",
+    "aliases": "بيناتنا لمجموعة مغلقة ومشاركة الرصيد والبيانات",
     "tables": [
       {
         "title": "أسعار Beinatna",
