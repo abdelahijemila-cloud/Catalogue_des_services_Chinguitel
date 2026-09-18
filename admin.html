@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="fr">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>إدارة دليل خدمات شينقيتل</title>
+<title>Gestion du catalogue Chinguitel</title>
 <style>
 :root{--blue:#087bdc;--purple:#7132c5;--ink:#102b55;--muted:#64748b;--bg:#f5f7fb;--line:#dfe6ef;--green:#159b68;--red:#c62828}
 *{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.45}
@@ -11,27 +11,27 @@ main{padding:24px 16px 60px}.box{background:#fff;border:1px solid var(--line);bo
 h2{margin:0 0 14px;font-size:21px}.help{color:var(--muted);font-size:14px}.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{margin-bottom:12px}label{display:block;font-weight:800;font-size:13px;margin-bottom:6px}input,textarea{width:100%;border:1px solid #ccd7e4;border-radius:10px;padding:10px 11px;font:inherit;color:var(--ink);background:#fff}textarea{min-height:75px;resize:vertical}
 button{border:0;border-radius:10px;padding:10px 15px;font:inherit;font-weight:800;cursor:pointer}.primary{background:var(--blue);color:#fff}.secondary{background:#edf3f9;color:var(--ink)}.danger{background:#fff0f0;color:var(--red);border:1px solid #ffd0d0}
 .service{border:1px solid var(--line);border-radius:16px;margin:14px 0;overflow:hidden}.service-head{background:#f6f9fd;padding:15px;display:flex;justify-content:space-between;gap:12px;align-items:center}.service-head strong{font-size:19px}.service-body{padding:16px}.table-card{border:1px solid var(--line);border-radius:13px;padding:13px;margin:13px 0}.table-head{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:10px}.table-head input{max-width:500px;font-weight:800}.grid-table{overflow:auto}.grid-table table{border-collapse:collapse;width:100%;min-width:700px}.grid-table th,.grid-table td{border:1px solid #e2e8f0;padding:7px}.grid-table th{background:#f1f5f9;text-align:left}.grid-table input{border:0;border-radius:6px;padding:7px;background:#fff}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}.status{margin-top:12px;padding:11px 13px;border-radius:10px;display:none}.status.show{display:block}.status.ok{background:#eaf8f1;color:#126b49}.status.err{background:#fff0f0;color:#9f2222}.sticky{position:sticky;bottom:12px;z-index:5;background:#102b55;color:#fff;border-radius:15px;padding:13px;display:flex;justify-content:space-between;align-items:center;gap:15px;box-shadow:0 10px 30px rgba(16,43,85,.25)}.sticky button{background:#fff;color:var(--ink)}.hidden{display:none!important}@media(max-width:700px){.row{grid-template-columns:1fr}.sticky{flex-direction:column;align-items:stretch}}
-html,body{direction:rtl}body{font-family:Tahoma,Arial,sans-serif}.grid-table th{text-align:right}.grid-table input{text-align:right}.service-head,.table-head,.sticky{direction:rtl}</style>
+</style>
 </head>
 <body>
-<header><div class="wrap"><h1>إدارة دليل خدمات شينقيتل</h1><p>تعديل معلومات الدليل دون الحاجة إلى تعديل برمجة الموقع.</p></div></header>
+<header><div class="wrap"><h1>Gestion du catalogue Chinguitel</h1><p>Modifier les informations du catalogue sans toucher au code du site.</p></div></header>
 <main>
 <section class="box" id="loginBox">
-<h2>1. فتح الدليل</h2>
-<p class="help">استخدموا مفتاح وصول مخصّصًا لهذا الدليل. يتيح لهذه الصفحة قراءة التعديلات وحفظها مباشرةً.</p>
+<h2>1. Ouvrir le catalogue</h2>
+<p class="help">Utilisez une clé d'accès GitHub dédiée à ce catalogue. Elle permet à cette page de lire et d'enregistrer les modifications directement.</p>
 <div class="row">
-<div class="field"><label>عنوان مستودع GitHub</label><input id="repo" value="https://github.com/abdelahijemila-cloud/Catalogue_des_services_Chinguitel"></div>
-<div class="field"><label>مفتاح وصول GitHub</label><input id="token" type="password" placeholder="ألصقوا مفتاح الوصول هنا"></div>
+<div class="field"><label>Adresse du dépôt GitHub</label><input id="repo" value="https://github.com/abdelahijemila-cloud/Catalogue_des_services_Chinguitel"></div>
+<div class="field"><label>Clé d'accès GitHub</label><input id="token" type="password" placeholder="Collez votre clé d'accès ici"></div>
 </div>
-<div class="actions"><button class="primary" id="connect">فتح الدليل</button><button class="secondary" id="clear">مسح المعلومات</button></div>
+<div class="actions"><button class="primary" id="connect">Ouvrir le catalogue</button><button class="secondary" id="clear">Effacer les informations</button></div>
 <div class="status" id="status"></div>
 </section>
 <section class="box hidden" id="editorBox">
-<h2>2. تعديل المعلومات</h2>
-<p class="help">يمكنكم تعديل الأسعار والأحجام والدقائق والرسائل النصية ومدد الصلاحية والرموز والوصف والجداول.</p>
+<h2>2. Modifier les informations</h2>
+<p class="help">Changez les prix, volumes, minutes, SMS, validités, codes, descriptions et tableaux.</p>
 <div id="services"></div>
 </section>
-<div class="sticky hidden" id="saveBar"><span id="changed">لا توجد تعديلات</span><button id="save">حفظ التعديلات</button></div>
+<div class="sticky hidden" id="saveBar"><span id="changed">Aucune modification</span><button id="save">Enregistrer les modifications</button></div>
 </main>
 <script>
 let services=[],originalText='',repoFull='',token='';
@@ -44,27 +44,27 @@ function base64ToUtf8(base64){const binary=atob(base64.replace(/\s/g,''));const 
 function render(){
  $('services').innerHTML=services.map((s,si)=>`
  <article class="service" data-si="${si}">
-  <div class="service-head"><strong>${esc(s.n)}</strong><button class="danger remove-service">حذف هذه الخدمة</button></div>
+  <div class="service-head"><strong>${esc(s.n)}</strong><button class="danger remove-service">Supprimer ce service</button></div>
   <div class="service-body">
    <div class="row">
-    <div class="field"><label>اسم الخدمة</label><input data-path="n" value="${esc(s.n)}"></div>
-    <div class="field"><label>الفئة</label><input data-path="c" value="${esc(s.c)}"></div>
+    <div class="field"><label>Nom du service</label><input data-path="n" value="${esc(s.n)}"></div>
+    <div class="field"><label>Catégorie</label><input data-path="c" value="${esc(s.c)}"></div>
    </div>
-   <div class="field"><label>كلمات البحث</label><input data-path="aliases" value="${esc(s.aliases||'')}"></div>
-   <div class="field"><label>التفعيل / الاشتراك</label><textarea data-path="activation">${esc(s.activation||'')}</textarea></div>
+   <div class="field"><label>Mots-clés de recherche</label><input data-path="aliases" value="${esc(s.aliases||'')}"></div>
+   <div class="field"><label>Activation / souscription</label><textarea data-path="activation">${esc(s.activation||'')}</textarea></div>
    ${(s.tables||[]).map((t,ti)=>`
     <div class="table-card" data-ti="${ti}">
-     <div class="table-head"><input class="table-title" value="${esc(t.title)}"><button class="danger remove-table">حذف هذا الجدول</button></div>
+     <div class="table-head"><input class="table-title" value="${esc(t.title)}"><button class="danger remove-table">Supprimer ce tableau</button></div>
      <div class="grid-table"><table><thead><tr>${t.headers.map((h,hi)=>`<th><input class="header-input" data-hi="${hi}" value="${esc(h)}"></th>`).join('')}</tr></thead>
      <tbody>${t.rows.map((r,ri)=>`<tr>${r.map((v,ci)=>`<td><input class="cell-input" data-ri="${ri}" data-ci="${ci}" value="${esc(v)}"></td>`).join('')}<td><button class="danger remove-row" data-ri="${ri}">×</button></td></tr>`).join('')}</tbody></table></div>
-     <div class="actions"><button class="secondary add-row">+ إضافة صف</button></div>
+     <div class="actions"><button class="secondary add-row">+ Ajouter une ligne</button></div>
     </div>`).join('')}
-   <div class="actions"><button class="secondary add-table">+ إضافة جدول</button></div>
+   <div class="actions"><button class="secondary add-table">+ Ajouter un tableau</button></div>
   </div>
  </article>`).join('');
  bindEditor();
 }
-function mark(){$('changed').textContent='تعديلات غير محفوظة';$('saveBar').classList.remove('hidden')}
+function mark(){$('changed').textContent='Modifications non enregistrées';$('saveBar').classList.remove('hidden')}
 function readDom(){
  document.querySelectorAll('.service').forEach(a=>{const si=+a.dataset.si,s=services[si];a.querySelectorAll('[data-path]').forEach(x=>s[x.dataset.path]=x.value);a.querySelectorAll('.table-card').forEach(tc=>{const ti=+tc.dataset.ti,t=s.tables[ti];t.title=tc.querySelector('.table-title').value;tc.querySelectorAll('.header-input').forEach(x=>t.headers[+x.dataset.hi]=x.value);tc.querySelectorAll('.cell-input').forEach(x=>t.rows[+x.dataset.ri][+x.dataset.ci]=x.value)})});
 }
@@ -74,30 +74,30 @@ function bindEditor(){
  document.querySelectorAll('.remove-table').forEach(b=>b.onclick=()=>{const a=b.closest('.service'),si=+a.dataset.si,tc=b.closest('.table-card'),ti=+tc.dataset.ti;services[si].tables.splice(ti,1);render();mark()});
  document.querySelectorAll('.remove-row').forEach(b=>b.onclick=()=>{const a=b.closest('.service'),si=+a.dataset.si,tc=b.closest('.table-card'),ti=+tc.dataset.ti;services[si].tables[ti].rows.splice(+b.dataset.ri,1);render();mark()});
  document.querySelectorAll('.add-row').forEach(b=>b.onclick=()=>{readDom();const a=b.closest('.service'),si=+a.dataset.si,tc=b.closest('.table-card'),ti=+tc.dataset.ti;services[si].tables[ti].rows.push(new Array(services[si].tables[ti].headers.length).fill(''));render();mark()});
- document.querySelectorAll('.add-table').forEach(b=>b.onclick=()=>{readDom();const si=+b.closest('.service').dataset.si;services[si].tables.push({title:'جدول جديد',headers:['العمود 1','العمود 2'],rows:[['','']]});render();mark()});
+ document.querySelectorAll('.add-table').forEach(b=>b.onclick=()=>{readDom();const si=+b.closest('.service').dataset.si;services[si].tables.push({title:'Nouveau tableau',headers:['Colonne 1','Colonne 2'],rows:[['','']]});render();mark()});
 }
 $('connect').onclick=async()=>{
  repoFull=parseRepo($('repo').value.trim());token=$('token').value.trim();
- if(!repoFull||!token)return show('يرجى ملء الحقلين.');
+ if(!repoFull||!token)return show('Veuillez remplir les deux champs.');
  try{
   const r=await fetch('https://api.github.com/repos/'+repoFull+'/contents/services.json?ref=main',{headers:{Authorization:'Bearer '+token,Accept:'application/vnd.github+json'}});
   if(!r.ok)throw new Error();
   const j=await r.json();services=JSON.parse(base64ToUtf8(j.content));originalText=JSON.stringify(services,null,2);
   sessionStorage.setItem('repo',repoFull);sessionStorage.setItem('token',token);sessionStorage.setItem('sha',j.sha);
-  render();$('editorBox').classList.remove('hidden');$('loginBox').querySelector('h2').textContent='تم فتح الدليل';$('saveBar').classList.remove('hidden');$('changed').textContent='لا توجد تعديلات';
-  show('تم تحميل الدليل. يمكنكم الآن تعديل المعلومات.',true);
- }catch(e){show('تعذّر فتح الدليل. تحققوا من عنوان المستودع ومفتاح الوصول.')}
+  render();$('editorBox').classList.remove('hidden');$('loginBox').querySelector('h2').textContent='Catalogue ouvert';$('saveBar').classList.remove('hidden');$('changed').textContent='Aucune modification';
+  show('Catalogue chargé. Vous pouvez maintenant modifier les informations.',true);
+ }catch(e){show('Impossible d’ouvrir le catalogue. Vérifiez l’adresse du dépôt et la clé d’accès.')}
 };
-$('clear').onclick=()=>{sessionStorage.clear();$('token').value='';show('تم مسح المعلومات.',true)};
+$('clear').onclick=()=>{sessionStorage.clear();$('token').value='';show('Informations effacées.',true)};
 $('save').onclick=async()=>{
  readDom();const newText=JSON.stringify(services,null,2);
- if(newText===originalText){show('لا توجد تعديلات للحفظ.',true);return}
+ if(newText===originalText){show('Aucune modification à enregistrer.',true);return}
  const sha=sessionStorage.getItem('sha');
  try{
-  const r=await fetch('https://api.github.com/repos/'+repoFull+'/contents/services.json',{method:'PUT',headers:{Authorization:'Bearer '+token,Accept:'application/vnd.github+json','Content-Type':'application/json'},body:JSON.stringify({message:'تحديث الدليل بواسطة مدير المحتوى',content:utf8ToBase64(newText),sha,branch:'main'})});
+  const r=await fetch('https://api.github.com/repos/'+repoFull+'/contents/services.json',{method:'PUT',headers:{Authorization:'Bearer '+token,Accept:'application/vnd.github+json','Content-Type':'application/json'},body:JSON.stringify({message:'Mise à jour du catalogue par le gestionnaire',content:utf8ToBase64(newText),sha,branch:'main'})});
   if(!r.ok)throw new Error();
-  const j=await r.json();sessionStorage.setItem('sha',j.content.sha);originalText=newText;$('changed').textContent='تم حفظ التعديلات ✓';show('تم الحفظ. سيُحدَّث الموقع تلقائيًا بعد لحظات.',true);
- }catch(e){show('فشل الحفظ. تحققوا من مفتاح الوصول وحاولوا مرة أخرى.')}
+  const j=await r.json();sessionStorage.setItem('sha',j.content.sha);originalText=newText;$('changed').textContent='Modifications enregistrées ✓';show('C’est enregistré. Le site se mettra à jour automatiquement dans quelques instants.',true);
+ }catch(e){show('La sauvegarde a échoué. Vérifiez votre clé d’accès et réessayez.')}
 };
 (function(){const r=sessionStorage.getItem('repo'),t=sessionStorage.getItem('token');if(r)$('repo').value='https://github.com/'+r;if(t)$('token').value=t})();
 </script>
