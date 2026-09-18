@@ -6,48 +6,37 @@
 <style>
 :root{--blue:#087bdc;--purple:#7132c5;--ink:#102b55;--muted:#64748b;--bg:#f5f7fb;--line:#dfe6ef;--green:#159b68;--red:#c62828}
 *{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.45}
-header{background:linear-gradient(120deg,#087bdc,#7132c5);color:#fff;padding:28px 20px}header .wrap,main{max-width:1100px;margin:auto}h1{margin:0 0 6px;font-size:30px}header p{margin:0;opacity:.92}
-main{padding:24px 16px 70px}.box{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;margin-bottom:18px;box-shadow:0 8px 24px rgba(16,43,85,.06)}
-h2{margin:0 0 10px;font-size:21px}.help{color:var(--muted);font-size:14px}.field{margin-bottom:12px}label{display:block;font-weight:800;font-size:13px;margin-bottom:6px}
-input,textarea{width:100%;border:1px solid #ccd7e4;border-radius:10px;padding:10px 11px;font:inherit;color:var(--ink);background:#fff}textarea{min-height:75px;resize:vertical}
-button{border:0;border-radius:10px;padding:10px 15px;font:inherit;font-weight:800;cursor:pointer}.primary{background:var(--blue);color:#fff}.secondary{background:#edf3f9;color:var(--ink)}.danger{background:#fff0f0;color:var(--red);border:1px solid #ffd0d0}.success{background:#eaf8f1;color:var(--green)}
-.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}.status{margin-top:12px;padding:11px 13px;border-radius:10px;display:none}.status.show{display:block}.status.ok{background:#eaf8f1;color:#126b49}.status.err{background:#fff0f0;color:#9f2222}
-.service{border:1px solid var(--line);border-radius:16px;margin:14px 0;overflow:hidden}.service-head{background:#f6f9fd;padding:15px;display:flex;justify-content:space-between;gap:12px;align-items:center}.service-head strong{font-size:19px}.service-body{padding:16px}.table-card{border:1px solid var(--line);border-radius:13px;padding:13px;margin:13px 0}.table-head{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:10px}.table-head input{max-width:500px;font-weight:800}.grid-table{overflow:auto}.grid-table table{border-collapse:collapse;width:100%;min-width:700px}.grid-table th,.grid-table td{border:1px solid #e2e8f0;padding:7px}.grid-table th{background:#f1f5f9;text-align:left}.grid-table input{border:0;border-radius:6px;padding:7px;background:#fff}.sticky{position:sticky;bottom:12px;z-index:5;background:#102b55;color:#fff;border-radius:15px;padding:13px;display:flex;justify-content:space-between;align-items:center;gap:15px;box-shadow:0 10px 30px rgba(16,43,85,.25)}.sticky button{background:#fff;color:var(--ink)}.hidden{display:none!important}.step{display:flex;gap:12px;align-items:flex-start;margin:12px 0}.num{min-width:28px;height:28px;border-radius:50%;background:#edf3f9;display:grid;place-items:center;font-weight:900}
-@media(max-width:700px){.sticky{flex-direction:column;align-items:stretch}.service-head,.table-head{flex-direction:column;align-items:stretch}}
+header{background:linear-gradient(120deg,#087bdc,#7132c5);color:#fff;padding:28px 20px}header .wrap,main{max-width:1100px;margin:auto}h1{margin:0 0 6px;font-size:30px}header p{margin:0;opacity:.9}
+main{padding:24px 16px 60px}.box{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;margin-bottom:18px;box-shadow:0 8px 24px rgba(16,43,85,.06)}
+h2{margin:0 0 14px;font-size:21px}.help{color:var(--muted);font-size:14px}.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{margin-bottom:12px}label{display:block;font-weight:800;font-size:13px;margin-bottom:6px}input,textarea{width:100%;border:1px solid #ccd7e4;border-radius:10px;padding:10px 11px;font:inherit;color:var(--ink);background:#fff}textarea{min-height:75px;resize:vertical}
+button{border:0;border-radius:10px;padding:10px 15px;font:inherit;font-weight:800;cursor:pointer}.primary{background:var(--blue);color:#fff}.secondary{background:#edf3f9;color:var(--ink)}.danger{background:#fff0f0;color:var(--red);border:1px solid #ffd0d0}
+.service{border:1px solid var(--line);border-radius:16px;margin:14px 0;overflow:hidden}.service-head{background:#f6f9fd;padding:15px;display:flex;justify-content:space-between;gap:12px;align-items:center}.service-head strong{font-size:19px}.service-body{padding:16px}.table-card{border:1px solid var(--line);border-radius:13px;padding:13px;margin:13px 0}.table-head{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:10px}.table-head input{max-width:500px;font-weight:800}.grid-table{overflow:auto}.grid-table table{border-collapse:collapse;width:100%;min-width:700px}.grid-table th,.grid-table td{border:1px solid #e2e8f0;padding:7px}.grid-table th{background:#f1f5f9;text-align:left}.grid-table input{border:0;border-radius:6px;padding:7px;background:#fff}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}.status{margin-top:12px;padding:11px 13px;border-radius:10px;display:none}.status.show{display:block}.status.ok{background:#eaf8f1;color:#126b49}.status.err{background:#fff0f0;color:#9f2222}.sticky{position:sticky;bottom:12px;z-index:5;background:#102b55;color:#fff;border-radius:15px;padding:13px;display:flex;justify-content:space-between;align-items:center;gap:15px;box-shadow:0 10px 30px rgba(16,43,85,.25)}.sticky button{background:#fff;color:var(--ink)}.hidden{display:none!important}@media(max-width:700px){.row{grid-template-columns:1fr}.sticky{flex-direction:column;align-items:stretch}}
 </style>
 </head>
 <body>
 <header><div class="wrap"><h1>Gestion du catalogue Chinguitel</h1><p>Modifier les informations du catalogue sans toucher au code du site.</p></div></header>
 <main>
-<section class="box" id="openBox">
+<section class="box" id="loginBox">
 <h2>1. Ouvrir le catalogue</h2>
-<p class="help">Aucune clé GitHub n’est nécessaire. La page charge simplement les informations publiques du catalogue. Pour publier une modification, vous téléchargerez ensuite le fichier mis à jour et le remplacerez sur GitHub.</p>
-<div class="field"><label>Adresse du catalogue GitHub</label><input id="repo" value="https://github.com/abdelahijemila-cloud/Catalogue_des_services_Chinguitel"></div>
-<div class="actions"><button class="primary" id="connect">Ouvrir le catalogue</button></div>
+<p class="help">Utilisez une clé d'accès GitHub dédiée à ce catalogue. Elle permet à cette page de lire et d'enregistrer les modifications directement.</p>
+<div class="row">
+<div class="field"><label>Adresse du dépôt GitHub</label><input id="repo" value="https://github.com/abdelahijemila-cloud/Catalogue_des_services_Chinguitel"></div>
+<div class="field"><label>Clé d'accès GitHub</label><input id="token" type="password" placeholder="Collez votre clé d'accès ici"></div>
+</div>
+<div class="actions"><button class="primary" id="connect">Ouvrir le catalogue</button><button class="secondary" id="clear">Effacer les informations</button></div>
 <div class="status" id="status"></div>
 </section>
-
 <section class="box hidden" id="editorBox">
 <h2>2. Modifier les informations</h2>
-<p class="help">Changez les informations directement ici : prix, volumes Internet, minutes, SMS, validités, codes, descriptions et tableaux.</p>
+<p class="help">Changez les prix, volumes, minutes, SMS, validités, codes, descriptions et tableaux.</p>
 <div id="services"></div>
 </section>
-
-<section class="box hidden" id="publishBox">
-<h2>3. Mettre les modifications sur le site</h2>
-<div class="step"><span class="num">1</span><div><b>Télécharger le fichier mis à jour</b><br><span class="help">Cliquez sur « Télécharger les données » ci-dessous.</span></div></div>
-<div class="step"><span class="num">2</span><div><b>Ouvrir le fichier services.json sur GitHub</b><br><span class="help">Le bouton ci-dessous ouvre directement la page où le fichier peut être remplacé.</span></div></div>
-<div class="step"><span class="num">3</span><div><b>Remplacer le contenu et enregistrer</b><br><span class="help">Sur GitHub, ouvrez la modification du fichier, remplacez son contenu par le fichier téléchargé, puis validez. Le catalogue public se mettra ensuite à jour automatiquement.</span></div></div>
-<div class="actions"><button class="primary" id="download">Télécharger les données</button><button class="secondary" id="githubEdit">Ouvrir services.json sur GitHub</button></div>
-<div class="status" id="publishStatus"></div>
-</section>
-
-<div class="sticky hidden" id="saveBar"><span id="changed">Aucune modification</span><button id="downloadSticky">Télécharger les données</button></div>
+<div class="sticky hidden" id="saveBar"><span id="changed">Aucune modification</span><button id="save">Enregistrer les modifications</button></div>
 </main>
 <script>
-let services=[],originalText='';
+let services=[],originalText='',repoFull='',token='';
 const $=id=>document.getElementById(id);
-function show(msg,ok=false,target='status'){const s=$(target);s.textContent=msg;s.className='status show '+(ok?'ok':'err')}
+function show(msg,ok=false){const s=$('status');s.textContent=msg;s.className='status show '+(ok?'ok':'err')}
 function parseRepo(v){try{const u=new URL(v);const p=u.pathname.replace(/^\//,'').replace(/\/$/,'').split('/');if(p.length>=2)return p[0]+'/'+p[1]}catch(e){}return v.replace(/^https?:\/\/github\.com\//,'').replace(/\/$/,'')}
 function esc(v){return String(v??'').replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]))}
 function render(){
@@ -55,8 +44,10 @@ function render(){
  <article class="service" data-si="${si}">
   <div class="service-head"><strong>${esc(s.n)}</strong><button class="danger remove-service">Supprimer ce service</button></div>
   <div class="service-body">
-   <div class="field"><label>Nom du service</label><input data-path="n" value="${esc(s.n)}"></div>
-   <div class="field"><label>Catégorie</label><input data-path="c" value="${esc(s.c)}"></div>
+   <div class="row">
+    <div class="field"><label>Nom du service</label><input data-path="n" value="${esc(s.n)}"></div>
+    <div class="field"><label>Catégorie</label><input data-path="c" value="${esc(s.c)}"></div>
+   </div>
    <div class="field"><label>Mots-clés de recherche</label><input data-path="aliases" value="${esc(s.aliases||'')}"></div>
    <div class="field"><label>Activation / souscription</label><textarea data-path="activation">${esc(s.activation||'')}</textarea></div>
    ${(s.tables||[]).map((t,ti)=>`
@@ -71,7 +62,7 @@ function render(){
  </article>`).join('');
  bindEditor();
 }
-function mark(){ $('changed').textContent='Modifications non enregistrées';$('saveBar').classList.remove('hidden') }
+function mark(){$('changed').textContent='Modifications non enregistrées';$('saveBar').classList.remove('hidden')}
 function readDom(){
  document.querySelectorAll('.service').forEach(a=>{const si=+a.dataset.si,s=services[si];a.querySelectorAll('[data-path]').forEach(x=>s[x.dataset.path]=x.value);a.querySelectorAll('.table-card').forEach(tc=>{const ti=+tc.dataset.ti,t=s.tables[ti];t.title=tc.querySelector('.table-title').value;tc.querySelectorAll('.header-input').forEach(x=>t.headers[+x.dataset.hi]=x.value);tc.querySelectorAll('.cell-input').forEach(x=>t.rows[+x.dataset.ri][+x.dataset.ci]=x.value)})});
 }
@@ -83,23 +74,29 @@ function bindEditor(){
  document.querySelectorAll('.add-row').forEach(b=>b.onclick=()=>{readDom();const a=b.closest('.service'),si=+a.dataset.si,tc=b.closest('.table-card'),ti=+tc.dataset.ti;services[si].tables[ti].rows.push(new Array(services[si].tables[ti].headers.length).fill(''));render();mark()});
  document.querySelectorAll('.add-table').forEach(b=>b.onclick=()=>{readDom();const si=+b.closest('.service').dataset.si;services[si].tables.push({title:'Nouveau tableau',headers:['Colonne 1','Colonne 2'],rows:[['','']]});render();mark()});
 }
-function currentText(){readDom();return JSON.stringify(services,null,2)}
-function downloadData(){
- const text=currentText(),blob=new Blob([text],{type:'application/json;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');
- a.href=url;a.download='services.json';a.click();URL.revokeObjectURL(url);show('Le fichier services.json a été téléchargé.',true,'publishStatus');
-}
 $('connect').onclick=async()=>{
- const repo=parseRepo($('repo').value.trim());
- if(!repo)return show('Veuillez indiquer l’adresse du dépôt GitHub.');
+ repoFull=parseRepo($('repo').value.trim());token=$('token').value.trim();
+ if(!repoFull||!token)return show('Veuillez remplir les deux champs.');
  try{
-  const r=await fetch('https://raw.githubusercontent.com/'+repo+'/main/services.json?x='+Date.now());
+  const r=await fetch('https://api.github.com/repos/'+repoFull+'/contents/services.json?ref=main',{headers:{Authorization:'Bearer '+token,Accept:'application/vnd.github+json'}});
   if(!r.ok)throw new Error();
-  services=await r.json();originalText=JSON.stringify(services,null,2);render();
-  $('editorBox').classList.remove('hidden');$('publishBox').classList.remove('hidden');$('saveBar').classList.remove('hidden');$('changed').textContent='Aucune modification';
-  $('githubEdit').onclick=()=>window.open('https://github.com/'+repo+'/edit/main/services.json','_blank');
+  const j=await r.json();services=JSON.parse(atob(j.content.replace(/\n/g,'')));originalText=JSON.stringify(services,null,2);
+  sessionStorage.setItem('repo',repoFull);sessionStorage.setItem('token',token);sessionStorage.setItem('sha',j.sha);
+  render();$('editorBox').classList.remove('hidden');$('loginBox').querySelector('h2').textContent='Catalogue ouvert';$('saveBar').classList.remove('hidden');$('changed').textContent='Aucune modification';
   show('Catalogue chargé. Vous pouvez maintenant modifier les informations.',true);
- }catch(e){show('Impossible de charger le catalogue. Vérifiez l’adresse du dépôt et que services.json est bien présent sur la branche main.')}
+ }catch(e){show('Impossible d’ouvrir le catalogue. Vérifiez l’adresse du dépôt et la clé d’accès.')}
 };
-$('download').onclick=downloadData;$('downloadSticky').onclick=downloadData;
+$('clear').onclick=()=>{sessionStorage.clear();$('token').value='';show('Informations effacées.',true)};
+$('save').onclick=async()=>{
+ readDom();const newText=JSON.stringify(services,null,2);
+ if(newText===originalText){show('Aucune modification à enregistrer.',true);return}
+ const sha=sessionStorage.getItem('sha');
+ try{
+  const r=await fetch('https://api.github.com/repos/'+repoFull+'/contents/services.json',{method:'PUT',headers:{Authorization:'Bearer '+token,Accept:'application/vnd.github+json','Content-Type':'application/json'},body:JSON.stringify({message:'Mise à jour du catalogue par le gestionnaire',content:btoa(unescape(encodeURIComponent(newText))),sha,branch:'main'})});
+  if(!r.ok)throw new Error();
+  const j=await r.json();sessionStorage.setItem('sha',j.content.sha);originalText=newText;$('changed').textContent='Modifications enregistrées ✓';show('C’est enregistré. Le site se mettra à jour automatiquement dans quelques instants.',true);
+ }catch(e){show('La sauvegarde a échoué. Vérifiez votre clé d’accès et réessayez.')}
+};
+(function(){const r=sessionStorage.getItem('repo'),t=sessionStorage.getItem('token');if(r)$('repo').value='https://github.com/'+r;if(t)$('token').value=t})();
 </script>
 </body></html>
