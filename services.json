@@ -327,7 +327,7 @@
         ]
       }
     ],
-    "activation": "*3# / 111# puis *3#"
+    "activation": "*3# / 111# puis *3# / application Chinguitel / transfert de crédit / applications bancaires"
   },
   {
     "n": "MauriChat",
@@ -369,7 +369,7 @@
         ]
       }
     ],
-    "activation": "*4# / 111# puis *4#"
+    "activation": "*4# / 111# puis *4# / application Chinguitel / transfert de crédit / applications bancaires"
   },
   {
     "n": "MauriNuit",
@@ -427,7 +427,7 @@
         ]
       }
     ],
-    "activation": "Non précisé dans le document source"
+    "activation": "application Chinguitel / applications bancaires"
   },
   {
     "n": "Raha / Raha+",
@@ -497,7 +497,7 @@
         ]
       }
     ],
-    "activation": "*6# / 111# puis *6#"
+    "activation": "*6# / 111# puis *6# / application Chinguitel / transfert de crédit / applications bancaires"
   },
   {
     "n": "Raha Night",
